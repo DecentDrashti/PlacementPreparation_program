@@ -1,11 +1,11 @@
-🔁 loop logic programs (python)
+# 🔁 loop logic programs (python)
 
 this repository contains basic and intermediate loop logic programs using python.
 all programs are written in a simple and easy manner, suitable for beginners and placement preparation.
 
 Level 1 – Basic Loop Logic
 
-##1️⃣Sum of 10 numbers
+## 1️⃣Sum of 10 numbers
 
 problem statement:
 write a program to find the sum of first 10 natural numbers using loop.
@@ -18,7 +18,7 @@ for i in range(1, 11):
 print("Sum of 10 numbers is:", total)
 
 
-##2️⃣Find factorial of a given number (n!)
+## 2️⃣Find factorial of a given number (n!)
 
 n = int(input("Enter a number: "))
 fact = 1
@@ -29,7 +29,7 @@ for i in range(1, n + 1):
 print("Factorial is:", fact)
 
 
-##3️⃣Print sum series 1 + 4 + 9 + 16 + … + n
+## 3️⃣Print sum series 1 + 4 + 9 + 16 + … + n
 
 n = int(input("Enter limit: "))
 total = 0
@@ -40,7 +40,7 @@ for i in range(1, n + 1):
 print("Sum of series:", total)
 
 
-##4️⃣Print digits of a number in reverse order
+## 4️⃣Print digits of a number in reverse order
 
 num = int(input("Enter a number: "))
 
@@ -49,7 +49,7 @@ while num > 0:
     num = num // 10
 
 
-##5️⃣Print sum of digits of a given number
+## 5️⃣Print sum of digits of a given number
 
 num = int(input("Enter a number: "))
 sum_digits = 0
@@ -61,7 +61,7 @@ while num > 0:
 print("Sum of digits:", sum_digits)
 
 
-##6️⃣Perform multiplication without using * operator
+## 6️⃣Perform multiplication without using * operator
 
 a = int(input("Enter first number: "))
 b = int(input("Enter second number: "))
@@ -73,7 +73,7 @@ for i in range(b):
 print("Multiplication result:", result)
 
 
-##7️⃣Calculate x^y without using power operator
+## 7️⃣Calculate x^y without using power operator
 
 x = int(input("Enter base: "))
 y = int(input("Enter power: "))
@@ -86,7 +86,7 @@ print("Result:", result)
 
 Level 2 – Loops with Conditional Logic
 
-##8️⃣Print numbers divisible by 2 between two numbers
+## 8️⃣Print numbers divisible by 2 between two numbers
 
 start = int(input("Enter start number: "))
 end = int(input("Enter end number: "))
@@ -96,7 +96,7 @@ for i in range(start, end + 1):
         print(i)
 
 
-##9️⃣Find factors of a given number
+## 9️⃣Find factors of a given number
 
 n = int(input("Enter a number: "))
 
@@ -105,7 +105,7 @@ for i in range(1, n + 1):
         print(i)
 
 
-##🔟Find the sum of all divisors of a number
+## 🔟Find the sum of all divisors of a number
 
 n = int(input("Enter a number: "))
 total = 0
@@ -117,7 +117,7 @@ for i in range(1, n + 1):
 print("Sum of divisors:", total)
 
 
-##1️⃣1️⃣Find the GCD (Greatest Common Divisor) of two numbers
+## 1️⃣1️⃣Find the GCD (Greatest Common Divisor) of two numbers
 
 a = int(input("Enter first number: "))
 b = int(input("Enter second number: "))
@@ -130,7 +130,7 @@ for i in range(1, min(a, b) + 1):
 print("GCD is:", gcd)
 
 
-##1️⃣2️⃣Find the LCM (Least Common Multiple) of two numbers
+## 1️⃣2️⃣Find the LCM (Least Common Multiple) of two numbers
 
 a = int(input("Enter first number: "))
 b = int(input("Enter second number: "))
@@ -143,7 +143,7 @@ while True:
     num = num + 1
 
 
-##1️⃣3️⃣Check whether a number is a Perfect Number
+## 1️⃣3️⃣Check whether a number is a Perfect Number
 
 n = int(input("Enter a number: "))
 total = 0
@@ -158,7 +158,7 @@ else:
     print("Not a Perfect Number")
 
 
-##1️⃣4️⃣Check whether a number is a Harshad Number
+## 1️⃣4️⃣Check whether a number is a Harshad Number
 
 n = int(input("Enter a number: "))
 temp = n
@@ -174,7 +174,7 @@ else:
     print("Not a Harshad Number")
 
 
-##1️⃣5️⃣Check whether a number is Prime or Not
+## 1️⃣5️⃣Check whether a number is Prime or Not
 
 n = int(input("Enter a number: "))
 count = 0
@@ -189,7 +189,7 @@ else:
     print("Not a Prime Number")
 
 
-##1️⃣6️⃣Print the Fibonacci Series
+## 1️⃣6️⃣Print the Fibonacci Series
 
 n = int(input("Enter number of terms: "))
 a = 0
@@ -204,7 +204,7 @@ for i in range(2, n):
     b = c
 
 
-##1️⃣7️⃣Find the sum of series 1 – 2 + 3 – 4 + … ± n
+## 1️⃣7️⃣Find the sum of series 1 – 2 + 3 – 4 + … ± n
 
 n = int(input("Enter value of n: "))
 total = 0
