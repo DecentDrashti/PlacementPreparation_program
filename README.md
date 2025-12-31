@@ -213,3 +213,122 @@ all programs are written in a simple and easy manner, suitable for beginners and
             total = total + i
     
     print("Sum of series:", total)s:", total)
+
+# Level 3 – Nested Loops, Patterns and Arrays
+## 1️⃣Find the sum of 1+(1+2)+(1+2+3)+…(1+2+3+…+n)
+
+    n = int(input("Enter value of n: "))
+    total_sum = 0
+    
+    for i in range(1, n + 1):
+        inner_sum = 0
+        for j in range(1, i + 1):
+            inner_sum = inner_sum + j
+        total_sum = total_sum + inner_sum
+    
+    print("Sum is:", total_sum)
+
+## 2️⃣Power without using multiplication and power operator
+
+    x = int(input("Enter base: "))
+    y = int(input("Enter power: "))
+    result = 1
+    
+    for i in range(y):
+        temp = 0
+        for j in range(x):
+            temp = temp + result
+        result = temp
+    
+    print("Result:", result)
+
+## 3️⃣implement a pattern
+
+1
+1 2
+1 2 3
+1 2 3 4
+1 2 3 4 5
+
+    for i in range(1, 6):
+        for j in range(1, i + 1):
+            print(j, end=" ")
+        print()
+
+## 4️⃣implement a pattern
+
+*
+* * *
+* * * * *
+
+    for i in range(1, 4):
+        for j in range(1, 2 * i):
+            print("*", end=" ")
+        print()
+
+## 5️⃣implement a pattern
+
+1
+2   4
+7   3
+5   8   6
+9  10
+11  12  13  14  15
+
+    num = 1
+    
+    for i in range(1, 6):
+        for j in range(i):
+            print(num, end=" ")
+            num = num + 1
+        print()
+
+## 6️⃣Find a Largest Element in array
+
+    arr = [10, 25, 3, 89, 45]
+    largest = arr[0]
+    
+    for i in arr:
+        if i > largest:
+            largest = i
+    
+    print("Largest element:", largest)
+
+## 7️⃣Find a Smallest Element in array
+
+    arr = [10, 25, 3, 89, 45]
+    smallest = arr[0]
+    
+    for i in arr:
+        if i < smallest:
+            smallest = i
+    
+    print("Smallest element:", smallest)
+
+## 8️⃣Search for an element in Array
+
+    arr = [10, 25, 3, 89, 45]
+    key = int(input("Enter element to search: "))
+    found = False
+    
+    for i in arr:
+        if i == key:
+            found = True
+            break
+    
+    if found:
+        print("Element found")
+    else:
+        print("Element not found")
+
+## 9️⃣Reverse an Array Elements
+
+    arr = [10, 20, 30, 40, 50]
+    n = len(arr)
+    
+    for i in range(n // 2):
+        temp = arr[i]
+        arr[i] = arr[n - i - 1]
+        arr[n - i - 1] = temp
+    
+    print("Reversed array:", arr)
