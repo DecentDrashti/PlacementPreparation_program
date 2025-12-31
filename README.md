@@ -10,12 +10,12 @@ Level 1 – Basic Loop Logic
 problem statement:
 write a program to find the sum of first 10 natural numbers using loop.
 
-total = 0
-
-for i in range(1, 11):
-    total = total + i
-
-print("Sum of 10 numbers is:", total)
+    total = 0
+    
+    for i in range(1, 11):
+        total = total + i
+    
+    print("Sum of 10 numbers is:", total)
 
 
 ## 2️⃣Find factorial of a given number (n!)
