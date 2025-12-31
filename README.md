@@ -245,9 +245,13 @@ all programs are written in a simple and easy manner, suitable for beginners and
 ## 3️⃣implement a pattern
 
 1
+
 1 2
+
 1 2 3
+
 1 2 3 4
+
 1 2 3 4 5
 
     for i in range(1, 6):
@@ -258,7 +262,9 @@ all programs are written in a simple and easy manner, suitable for beginners and
 ## 4️⃣implement a pattern
 
 *
+
 * * *
+
 * * * * *
 
     for i in range(1, 4):
@@ -269,10 +275,15 @@ all programs are written in a simple and easy manner, suitable for beginners and
 ## 5️⃣implement a pattern
 
 1
+
 2   4
+
 7   3
+
 5   8   6
+
 9  10
+
 11  12  13  14  15
 
     num = 1
