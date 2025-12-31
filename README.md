@@ -81,7 +81,7 @@ Level 1 – Basic Loop Logic
     
     print("Result:", result)
 
-## Level 2 – Loops with Conditional Logic
+# Level 2 – Loops with Conditional Logic
 
 ## 8️⃣Print numbers divisible by 2 between two numbers
 
