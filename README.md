@@ -7,9 +7,6 @@ Level 1 – Basic Loop Logic
 
 ## 1️⃣Sum of 10 numbers
 
-problem statement:
-write a program to find the sum of first 10 natural numbers using loop.
-
     total = 0
     
     for i in range(1, 11):
