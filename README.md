@@ -3,7 +3,7 @@
 this repository contains basic and intermediate loop logic programs using python.
 all programs are written in a simple and easy manner, suitable for beginners and placement preparation.
 
-Level 1 – Basic Loop Logic
+# Level 1 – Basic Loop Logic
 
 ## 1️⃣Sum of 10 numbers
 
