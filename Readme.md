@@ -1,19 +1,14 @@
-🔁 Loop Logic Practice Programs (Python)
+🔁 loop logic programs (python)
 
-This repository contains basic to intermediate loop-based programs written in Python, designed to strengthen logical thinking and problem-solving skills.
-Each problem includes a clear statement, approach, and simple code, making it ideal for beginners, students, and placement preparation.
-
-📌 Contents
+this repository contains basic and intermediate loop logic programs using python.
+all programs are written in a simple and easy manner, suitable for beginners and placement preparation.
 
 Level 1 – Basic Loop Logic
 
-Level 2 – Loops with Conditional Logic
+##1️⃣Sum of 10 numbers
 
-🟢 Level 1 – Basic Loop Logic
-🔢 Problem 1: Sum of 10 Numbers
-
-Problem Statement:
-Write a program to calculate the sum of the first 10 natural numbers using a loop.
+problem statement:
+write a program to find the sum of first 10 natural numbers using loop.
 
 total = 0
 
@@ -22,10 +17,8 @@ for i in range(1, 11):
 
 print("Sum of 10 numbers is:", total)
 
-🔢 Problem 2: Factorial of a Given Number
 
-Problem Statement:
-Write a program to find the factorial of a given number.
+##2️⃣Find factorial of a given number (n!)
 
 n = int(input("Enter a number: "))
 fact = 1
@@ -35,9 +28,8 @@ for i in range(1, n + 1):
 
 print("Factorial is:", fact)
 
-🔢 Problem 3: Sum of Square Series
 
-(1 + 4 + 9 + 16 + … + n)
+##3️⃣Print sum series 1 + 4 + 9 + 16 + … + n
 
 n = int(input("Enter limit: "))
 total = 0
@@ -47,70 +39,86 @@ for i in range(1, n + 1):
 
 print("Sum of series:", total)
 
-🔢 Problem 4: Reverse Digits of a Number
+
+##4️⃣Print digits of a number in reverse order
+
 num = int(input("Enter a number: "))
 
 while num > 0:
     print(num % 10)
     num = num // 10
 
-🔢 Problem 5: Sum of Digits of a Number
+
+##5️⃣Print sum of digits of a given number
+
 num = int(input("Enter a number: "))
 sum_digits = 0
 
 while num > 0:
-    sum_digits += num % 10
-    num //= 10
+    sum_digits = sum_digits + (num % 10)
+    num = num // 10
 
 print("Sum of digits:", sum_digits)
 
-🔢 Problem 6: Multiplication Without Using *
+
+##6️⃣Perform multiplication without using * operator
+
 a = int(input("Enter first number: "))
 b = int(input("Enter second number: "))
 result = 0
 
 for i in range(b):
-    result += a
+    result = result + a
 
-print("Result:", result)
+print("Multiplication result:", result)
 
-🔢 Problem 7: Calculate Power Without Using **
+
+##7️⃣Calculate x^y without using power operator
+
 x = int(input("Enter base: "))
 y = int(input("Enter power: "))
 result = 1
 
 for i in range(y):
-    result *= x
+    result = result * x
 
 print("Result:", result)
 
-🟡 Level 2 – Loops with Conditional Logic
-🔢 Problem 8: Numbers Divisible by 2 in a Range
-start = int(input("Enter start: "))
-end = int(input("Enter end: "))
+Level 2 – Loops with Conditional Logic
+
+##8️⃣Print numbers divisible by 2 between two numbers
+
+start = int(input("Enter start number: "))
+end = int(input("Enter end number: "))
 
 for i in range(start, end + 1):
     if i % 2 == 0:
         print(i)
 
-🔢 Problem 9: Factors of a Number
+
+##9️⃣Find factors of a given number
+
 n = int(input("Enter a number: "))
 
 for i in range(1, n + 1):
     if n % i == 0:
         print(i)
 
-🔢 Problem 10: Sum of All Divisors
+
+##🔟Find the sum of all divisors of a number
+
 n = int(input("Enter a number: "))
 total = 0
 
 for i in range(1, n + 1):
     if n % i == 0:
-        total += i
+        total = total + i
 
 print("Sum of divisors:", total)
 
-🔢 Problem 11: GCD of Two Numbers
+
+##1️⃣1️⃣Find the GCD (Greatest Common Divisor) of two numbers
+
 a = int(input("Enter first number: "))
 b = int(input("Enter second number: "))
 gcd = 1
@@ -119,81 +127,92 @@ for i in range(1, min(a, b) + 1):
     if a % i == 0 and b % i == 0:
         gcd = i
 
-print("GCD:", gcd)
+print("GCD is:", gcd)
 
-🔢 Problem 12: LCM of Two Numbers
+
+##1️⃣2️⃣Find the LCM (Least Common Multiple) of two numbers
+
 a = int(input("Enter first number: "))
 b = int(input("Enter second number: "))
 num = max(a, b)
 
 while True:
     if num % a == 0 and num % b == 0:
-        print("LCM:", num)
+        print("LCM is:", num)
         break
-    num += 1
+    num = num + 1
 
-🔢 Problem 13: Perfect Number Check
+
+##1️⃣3️⃣Check whether a number is a Perfect Number
+
 n = int(input("Enter a number: "))
 total = 0
 
 for i in range(1, n):
     if n % i == 0:
-        total += i
+        total = total + i
 
 if total == n:
     print("Perfect Number")
 else:
     print("Not a Perfect Number")
 
-🔢 Problem 14: Harshad Number Check
+
+##1️⃣4️⃣Check whether a number is a Harshad Number
+
 n = int(input("Enter a number: "))
 temp = n
 sum_digits = 0
 
 while temp > 0:
-    sum_digits += temp % 10
-    temp //= 10
+    sum_digits = sum_digits + (temp % 10)
+    temp = temp // 10
 
 if n % sum_digits == 0:
     print("Harshad Number")
 else:
     print("Not a Harshad Number")
 
-🔢 Problem 15: Prime Number Check
+
+##1️⃣5️⃣Check whether a number is Prime or Not
+
 n = int(input("Enter a number: "))
 count = 0
 
 for i in range(1, n + 1):
     if n % i == 0:
-        count += 1
+        count = count + 1
 
 if count == 2:
     print("Prime Number")
 else:
-    print("Not Prime")
+    print("Not a Prime Number")
 
-🔢 Problem 16: Fibonacci Series
+
+##1️⃣6️⃣Print the Fibonacci Series
+
 n = int(input("Enter number of terms: "))
-a, b = 0, 1
+a = 0
+b = 1
 
 print(a, b, end=" ")
 
 for i in range(2, n):
     c = a + b
     print(c, end=" ")
-    a, b = b, c
+    a = b
+    b = c
 
-🔢 Problem 17: Alternating Series
 
-(1 – 2 + 3 – 4 + … ± n)
+##1️⃣7️⃣Find the sum of series 1 – 2 + 3 – 4 + … ± n
 
 n = int(input("Enter value of n: "))
 total = 0
 
 for i in range(1, n + 1):
     if i % 2 == 0:
-        total -= i
+        total = total - i
     else:
-        total += i
+        total = total + i
 
-print("Sum of series:", total)
+print("Sum of series:", total)s:", total)
