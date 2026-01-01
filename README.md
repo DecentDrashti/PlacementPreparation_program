@@ -261,11 +261,11 @@ all programs are written in a simple and easy manner, suitable for beginners and
 
 ## 4️⃣implement a pattern
 
-*
-
-* * *
-
-* * * * *
+    *
+    
+    * * *
+    
+    * * * * *
 
     for i in range(1, 4):
         for j in range(1, 2 * i):
