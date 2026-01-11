@@ -1,0 +1,35 @@
+cross join:-
+Cross joins can lead to a large result set, especially when the participating tables have many
+rows.
+Syntax:
+SELECT columns
+FROM table1
+CROSS JOIN table2;
+In this syntax:
+● columns refers to the specific columns you want to retrieve from the cross-joined
+tables.
+● table1 and table2 are the names of the tables you want to combine using a cross
+join.
+Example: Consider two tables: Students and Courses.
+Students Table:
+StudentID StudentName
+1 Alice
+
+2 Bob
+
+Courses Table:
+CourseID CourseName
+101 Maths
+102 Science
+
+Cross Join Query:
+SELECT Students.StudentName, Courses.CourseName
+FROM Students
+CROSS JOIN Courses;
+Result:
+
+StudentName CourseName
+Alice Maths
+Alice Science
+Bob Maths
+Bob Science
