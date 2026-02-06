@@ -1,3 +1,4 @@
+//If you have an array [1, 2, 3, 4, 5] and k = 2, the result should be [4, 5, 1, 2, 3].
 public void rotate(int[] nums, int k) {
     int n = nums.length;
     int[] result = new int[n]; // Create a temporary "landing pad"
